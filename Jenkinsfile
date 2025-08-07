@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t static-website'
+                bat 'docker build -t static-website .'
             }
         }
         stage('Run Container') {
